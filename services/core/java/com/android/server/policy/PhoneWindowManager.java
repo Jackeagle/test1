@@ -4396,9 +4396,6 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                 ? attached.getFrameLw() : df);
     }
 
-<<<<<<< HEAD
-    private void applyStableConstraints(int sysui, int fl, Rect r) {
-=======
     private void applyForceImmersiveMode(int pfl, Rect r) {
         if ((pfl & PRIVATE_FLAG_STATUS_HIDE_FORCED) != 0) {
             r.top = mForceImmersiveTop;
@@ -4418,7 +4415,6 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             r.left = 0;
         }
 
->>>>>>> 021c70a... base: fix window bounds for left hand navigationbar
         if ((sysui & View.SYSTEM_UI_FLAG_LAYOUT_STABLE) != 0) {
             // If app is requesting a stable layout, don't let the
             // content insets go below the stable values.
